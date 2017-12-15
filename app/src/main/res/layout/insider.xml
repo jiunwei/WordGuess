@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/insider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/spacing"
+    android:visibility="gone"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_quarter"
+            android:layout_marginRight="@dimen/spacing_quarter"
+            style="@style/TextAppearance.AppCompat.Inverse"
+            android:text="@string/insider" />
+
+        <TextView
+            android:id="@+id/secret_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Inverse"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginStart="@dimen/spacing"
+        android:alpha="0.7"
+        style="@style/TextAppearance.AppCompat.Inverse" />
+
+</LinearLayout>

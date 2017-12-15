@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_half"
+    android:paddingTop="@dimen/spacing_half">
+
+    <TextView
+        android:id="@+id/circle"
+        android:layout_width="@dimen/circle"
+        android:layout_height="@dimen/circle"
+        android:layout_marginEnd="@dimen/spacing_half"
+        android:layout_marginRight="@dimen/spacing_half"
+        android:background="@drawable/circle_blue"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_half"
+        android:layout_marginRight="@dimen/spacing_half"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_half"
+        android:layout_marginRight="@dimen/spacing_half"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_half"
+        android:layout_marginRight="@dimen/spacing_half"
+        style="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_half"
+        android:layout_marginStart="@dimen/spacing_half"
+        android:clickable="true"
+        android:contentDescription="@string/remove"
+        android:focusable="true"
+        android:src="@drawable/ic_close_black_24dp" />
+
+</LinearLayout>

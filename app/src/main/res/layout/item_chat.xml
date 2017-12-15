@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/message_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_quarter"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        android:layout_marginStart="@dimen/chat_margin"
+        android:layout_marginLeft="@dimen/chat_margin"
+        android:layout_marginEnd="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_gravity="end"
+        android:background="@drawable/chat_blue"
+        android:paddingBottom="@dimen/spacing_half"
+        android:paddingEnd="@dimen/spacing_chat"
+        android:paddingStart="@dimen/spacing_chat"
+        android:paddingTop="@dimen/spacing_half"
+        style="@style/TextAppearance.AppCompat.Inverse" />
+
+    <TextView
+        android:id="@+id/message_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_quarter"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        android:layout_marginStart="@dimen/spacing"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginEnd="@dimen/chat_margin"
+        android:layout_marginRight="@dimen/chat_margin"
+        android:layout_gravity="start"
+        android:background="@drawable/chat_blue"
+        android:paddingBottom="@dimen/spacing_half"
+        android:paddingEnd="@dimen/spacing_chat"
+        android:paddingStart="@dimen/spacing_chat"
+        android:paddingTop="@dimen/spacing_half"
+        style="@style/TextAppearance.AppCompat.Inverse" />
+
+    <TextView
+        android:id="@+id/message_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_quarter"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/spacing_half"
+        android:paddingEnd="@dimen/spacing_chat"
+        android:paddingStart="@dimen/spacing_chat"
+        android:paddingTop="@dimen/spacing_half"
+        android:textStyle="italic" />
+
+</LinearLayout>

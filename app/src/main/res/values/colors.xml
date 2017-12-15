@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorAccent">#d50000</color>
+    <color name="player0">#F44336</color>
+    <color name="player1">#2196F3</color>
+    <color name="player2">#4CAF50</color>
+    <color name="player3">#FF9800</color>
+    <color name="player4">#795548</color>
+    <color name="player5">#9C27B0</color>
+</resources>

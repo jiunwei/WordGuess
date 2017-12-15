@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_margin">24dp</dimen>
+    <dimen name="circle">40dp</dimen>
+    <dimen name="home_button_margin">4dp</dimen>
+    <dimen name="panel_shadow">2dp</dimen>
+    <dimen name="spacing_chat">12dp</dimen>
+    <dimen name="spacing_half">8dp</dimen>
+    <dimen name="spacing_quarter">4dp</dimen>
+    <dimen name="spacing">16dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="home_button_width">150dp</dimen>
+</resources>

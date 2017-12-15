@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jiunwei.wordguess">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity android:name=".ui.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CreateActivity"
+            android:label="@string/create"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.JoinActivity"
+            android:label="@string/join"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.GameOverActivity"
+            android:label="Game Over"
+            android:parentActivityName=".ui.HomeActivity" />
+        <service
+            android:name=".service.BackgroundChatService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".widget.WordGuessWidgetService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <receiver android:name=".widget.WordGuessWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/word_guess_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
